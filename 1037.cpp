@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+float numero;
+pair <float, float> seq1(0,25);
+pair <float, float> seq2(25,50);
+pair <float, float> seq3(50,75);
+pair <float, float> seq4(75,100);
+
+cin >> numero;
+if(numero >= 0 && numero <=100){
+    if (numero>= 0 && numero<=25){
+        cout << "Intervalo [0,25]" << endl;
+    }
+    if (numero> 25 && numero<=50){
+        cout << "Intervalo (25,50]" << endl;
+    }
+    if (numero> 50 && numero<=75){
+        cout << "Intervalo (50,75]" << endl;
+    }
+    if (numero> 75 && numero<=100){
+        cout << "Intervalo (75,100]" << endl;
+    }
+
+}else{
+    cout << "Fora de intervalo" << endl;
+}
+return 0;
+}
